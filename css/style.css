@@ -1,0 +1,136 @@
+/* logo style */
+.logo { width: auto; height: auto; position: fixed; }
+.mobile_logo { display: none; }
+.logo h1 { padding: 50px; font-family: 'Monoton', 'Montserrat'; font-size: 23px; font-weight: normal; }
+.logo h1 span { line-height: 25px; writing-mode: tb-rl; }
+
+
+/* about style */
+.about { width: 80%; height: 750px; margin: auto; position: relative; }
+.about .content_tit { width: 100%; position: absolute; top: 20%; }
+.about .left { float: left; width: 50%; }
+.about .left img { width: 22%; position: absolute; top: 50%; transform: translateY(-35%); left: 18%;  }
+.about .right { float: right; width: 30%; position: absolute; top: 45%; right: 10%; line-height: 30px; }
+
+
+/* info style */
+.info { width: 80%; height: auto; margin: auto; }
+.info_content { width: 100%; height: auto; margin: 100px 0; position: relative; }
+.info_content::before,
+.info_content::after { content: ''; width: 15px; height: 15px; position: absolute; left: 50%; transform: translateX(-50%); border-radius: 50%; background: red; z-index: 9; }
+.info_content .line { position: absolute; left: 50%; transform: translateX(-50%); width: 1px; height: 100%; background: #c8c8c8; overflow: hidden; }
+.info_content .line span { position: absolute; width: 5px; top: 0; left: 0; background: red; }
+
+.info_content_box { width: 100%; height: auto; padding: 110px 0; }
+.info_content_box li { padding: 100px 0; }
+.info_content_box li:first-child { padding-top: 0; }
+
+.content_tit h3 { display: block; margin: auto; text-align: center; font-size: 30px; font-family: 'Raleway'; font-weight: 700; padding-bottom: 40px; }
+
+.info_content_box .info_content_txt { position: relative; }
+.info_content_box .info_content_txt .left { float: left; width: 50%; text-align: right; box-sizing: border-box; padding-right: 50px; }
+
+.info_content_box .info_content_txt .right { display: inline-block; float: right; width: 50%; box-sizing: border-box; padding-left: 50px; text-align: left; }
+.info_content_box .info_content_txt .right p { line-height: 25px; font-size: 15px; }
+
+
+/* skills style */
+/* skills progress bar */
+.circle-big { position: relative; width: 114px; height: 114px; margin: 30px 20px; float: left; }
+
+.circle-big svg { width: 114px; height: 114px; }
+.circle-big .bg { fill: none; stroke-width: 10px; stroke: #d1d1d1; }
+
+.circle01, .circle02, .circle03, .circle04 { float: right; }
+.circle05, .circle06, .circle07, .circle08 { float: left; }
+
+.circle-big .progress {
+  display: none;
+  fill: none;
+  stroke-width: 10px;
+  stroke: orange;
+  stroke-linecap: round;
+  stroke-dasharray: 326.56;
+  stroke-dashoffset: 60;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+
+}
+.circle-big .progress.on {
+  animation: big1 1.2s ease-in-out;
+}
+.circle01 .progress.on,
+.circle02 .progress.on { stroke-dasharray: 358.56; animation-name: big1; }
+.circle03 .progress.on,
+.circle04 .progress.on { stroke-dashoffset: 120; animation-name: big2; }
+.circle05 .progress.on { stroke-dasharray: 358.56; animation-name: big1; }
+.circle06 .progress.on { stroke-dasharray: 326.56; animation-name: big1; }
+.circle07 .progress.on,
+.circle08 .progress.on { stroke-dashoffset: 170; animation-name: big3; }
+
+.circle-big .text { position: absolute; width: 100%; top: 37px; font-size: 15px; text-align: center; font-weight: 400; line-height: 40px; }
+
+@keyframes big1 {
+  from {
+    stroke-dashoffset: 326.56;
+  }
+  to {
+    stroke-dashoffset: 60;
+  }
+}
+@keyframes big2 {
+  from {
+    stroke-dashoffset: 326.56;
+  }
+  to {
+    stroke-dashoffset: 120;
+  }
+}
+@keyframes big3 {
+  from {
+    stroke-dashoffset: 326.56;
+  }
+  to {
+    stroke-dashoffset: 170;
+  }
+}
+
+
+/* portfolio style */
+.portfolio .info_content_tit { padding-bottom: 50px; }
+.portfolio .info_content_txt { margin-top: 50px; }
+.portfolio .info_content_txt:first-child { margin-top: 0; }
+.portfolio .info_content_txt .left p,
+.portfolio .info_content_txt .right p { width: 400px; height: 380px; text-align: right; display: inline-block; margin: 0 50px; transition: all 0.5s; position: relative; }
+.portfolio .info_content_txt p span.txt_01 { display: block; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; }
+.portfolio .info_content_txt p span.txt_02 { display: block; position: absolute; left: 50%; transform: translateX(-50%); bottom: -20px; font-size: 13px; }
+.portfolio .info_content_txt p a { display: block; color: #111; font-size: 18px; position: absolute; left: 50%; bottom: -80px; transform:  translateX(-50%); border: 1px solid #b1b1b1; padding: 12px 20px; font-family: 'Montserrat'; transition: all 0.4s; }
+.portfolio .info_content_txt p a:hover { background: #b1b1b1; color: #fff; border: 1px solid #b1b1b1; }
+
+.portfolio .info_content_txt.lotte p { background: url(../img/pc_m/lotte.png) no-repeat center center; background-size: contain; }
+.portfolio .info_content_txt.php p { background: url(../img/pc_m/php.png) no-repeat center center; background-size: contain; }
+.portfolio .info_content_txt.mammoth p { background: url(../img/pc_m/mammoth.png) no-repeat center center; background-size: contain; }
+.portfolio .info_content_txt.doosan p { background: url(../img/pc_m/doosan.png) no-repeat center center; background-size: contain; }
+.portfolio .info_content_txt.fiore p { background: url(../img/pc_m/fiore.png) no-repeat center center; background-size: contain; }
+
+
+/* contact style */
+.contact { width: 40%; height: auto; margin: 0 auto 100px; }
+.contact_form { width: 100%; }
+.contact_form form { text-align: center; }
+.contact_form form input,
+.contact_form form textarea { border: 1px solid #d0d0d0;  outline: 0; border-radius: 5px; box-sizing: border-box; padding: 10px; font-size: 13px; }
+.contact_form form .name { width: 100%; }
+.contact_form form .email { width: 100%; margin: 10px 0; }
+.contact_form form .message { width: 100%; resize: none; height: 250px; }
+.contact_form form .send { display: block; margin: auto; text-align: center; border-radius: 2px; padding: 10px 30px; margin-top: 20px; cursor: pointer;  }
+
+
+/* top_btn style */
+.top_btn { position: fixed; right: 100px; bottom: 90px; display: none; cursor: pointer; z-index: 1999; }
+.top_btn p a { padding: 20px 15px; background: #b1b1b1; color: #fff; font-family: 'Montserrat'; font-weight: 800; letter-spacing: -1px;  }
+
+
+/* footer style */
+footer { width: 100%; height: auto; overflow: hidden; background: #465c60; }
+footer p { font-size: 14px; color: #fff; text-align: center; padding: 50px 0;  }

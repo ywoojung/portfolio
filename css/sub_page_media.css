@@ -1,0 +1,75 @@
+@media screen and (max-width: 1500px) {
+  .sec_02 .right_txt { top: 15%; right: 130px; }
+  .sec_03 .left_typo { left: 245px; }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .sec_02 .left_img { left: 2%; }
+  .sec_02 .right_txt { right: 50px; }
+  .sec_02 .right_txt .txt_detail { padding-top: 75px; }
+
+  .sec_03 .left_typo { left: 150px; }
+  .sec_03 .right_color { right: 35px; }
+  .sec_03 .right_color .color_2 p { margin: 0 40px; }
+}
+
+@media screen and (max-width: 900px) {
+  .sec_02 .left_img { left: -12%; }
+  .sec_02 .right_txt { top: 9%; width: 40%; }
+  .sec_02 .right_txt .txt_detail { padding-top: 42px; }
+  .sec_03 .left_typo { width: 40%; left: 75px; }
+  .sec_03 .right_color .color_2 p { margin: 0 18px; }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .next_page { display: none; }
+  .back_main { height: 60px; }
+  .back_main a { font-size: 14px; padding: 10px 17px; }
+
+  .sec_01 { height: 300px; }
+  .sec_01 .left_txt { width: 100%; left: 0; box-sizing: border-box; padding: 30px; }
+  .sec_01 .left_txt h2 { font-size: 30px; }
+  .sec_01 .left_txt span { margin-top: 2px; }
+  .sec_01 .left_txt .left_btn { margin-top: 25px; }
+  .sec_01 .left_txt .left_btn a { font-size: 13px; border: 1px solid #555; }
+  .sec_01 .rigth_img { display: none; }
+
+
+  .sec_02 { height: 1050px; }
+  .sec_02.lotte { height: 1120px; }
+  .sec_02 .left_img { width: 100%; left: 50%; margin-left: -60%; }
+  .sec_02.mammoth .left_img { margin-left: -59%; }
+  .sec_02.mammoth .right_txt { top: 55.5%; }
+  .sec_02 .right_txt { width: 100%; position: absolute; top: 57.5%; left: 0; bottom: 0; right: 0; box-sizing: border-box; padding: 30px;  }
+  .sec_02.lotte .right_txt { top: 55%; }
+  .sec_02 .right_txt .txt_detail { padding-top: 50px; }
+
+  .sec_03 { height: 425px; }
+  .sec_03 .left_typo { width: 100%; top: 0; left: 0; box-sizing: border-box; padding: 30px; }
+  .sec_03 .left_typo p { font-size: 15px; padding-top: 13px; }
+  .sec_03 .left_typo span { font-size: 14px; }
+  .sec_03 .right_color { width: 100%; top: 47%; left: 0; box-sizing: border-box; padding: 30px; }
+  .sec_03 .right_color .color { padding-top: 13px; }
+
+  .top_btn { right: 50px; }
+
+  footer p { font-size: 12px; padding: 35px 0; }
+}
+
+@media screen and (max-width: 435px) {
+  .sec_02 { height: 1120px; }
+  .sec_02.mammoth { height: 1060px; }
+  .sec_02 .left_img { margin-left: -73%; }
+  .sec_02.mammoth .left_img { margin-left: -71%; }
+  .sec_02.mammoth .right_txt { top: 51%; }
+  .sec_02.doosan .right_txt { top: 55%; }
+  .sec_02.lotte .right_txt { top: 53.5%; }
+
+  .sec_03 .right_color .color_2 p.lotte,
+  .sec_03 .right_color .color_2 p.mammoth,
+  .sec_03 .right_color .color_2 p.doosan { margin: 0 35px; }
+}
